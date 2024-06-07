@@ -1,0 +1,8 @@
+google-cloud-aiplatform
+flask
+langchain-google-vertexai
+chromadb
+langchain
+pytube
+youtube-transcript-api
+langchain-community
