@@ -13,10 +13,6 @@ from langchain_google_vertexai import VertexAIEmbeddings
 # PROJECT_ID = os.environ.get('GCP_PROJECT') #Your Google Cloud Project ID
 # LOCATION = os.environ.get('GCP_REGION')   #Your Google Cloud Project Region
 
-PROJECT_ID='ace-hydra-404205'
-LOCATION='us-central1'
-
-
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 llm = VertexAI(
@@ -37,7 +33,6 @@ embeddings = VertexAIEmbeddings(
     requests_per_minute=EMBEDDING_QPM,
     num_instances_per_batch=EMBEDDING_NUM_BATCH,
 )
-
 
 user_input_link="https://youtu.be/rfscVS0vtbw?si=KNJ-VBDbPTZRthGx"
 loader = YoutubeLoader.from_youtube_url(user_input_link, add_video_info=True)
