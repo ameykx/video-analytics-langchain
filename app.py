@@ -13,10 +13,6 @@ from langchain_google_vertexai import VertexAIEmbeddings
 # PROJECT_ID = os.environ.get('GCP_PROJECT') #Your Google Cloud Project ID
 # LOCATION = os.environ.get('GCP_REGION')   #Your Google Cloud Project Region
 
-PROJECT_ID='ace-hydra-404205'
-LOCATION='us-central1'
-
-
 vertexai.init(project=PROJECT_ID, location=LOCATION)
 
 llm = VertexAI(
